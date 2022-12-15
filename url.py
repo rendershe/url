@@ -10,7 +10,7 @@ def dispatcher(request):
 
     if 'usertype' not in request.session:
         return JsonResponse({
-            'ret': 302,
+            'ret': 322,
             'msg': 'unlogged',
             'redirect': '/mgr/sign.html'},
             status=302)
