@@ -4,7 +4,6 @@ from django.db import IntegrityError, transaction
 import time
 from  common.models import  Order,OrderMedicine
 import json
-
 def dispatcher(request):
 
     if 'usertype' not in request.session:
@@ -35,6 +34,7 @@ def dispatcher(request):
         return listorder(request)
     elif action == 'add_order':
         return addorder(request)
+        print('error,file not exist')
 
 
 
