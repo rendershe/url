@@ -3,7 +3,6 @@ from django.db.models import F
 from django.db import IntegrityError, transaction
 import time
 from  common.models import  Order,OrderMedicine
-
 import json
 
 def dispatcher(request):
