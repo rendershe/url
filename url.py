@@ -4,6 +4,8 @@ from django.db import IntegrityError, transaction
 import time
 from  common.models import  Order,OrderMedicine
 import json
+
+
 def dispatcher(request):
 
     if 'usertype' not in request.session:
@@ -40,3 +42,5 @@ def dispatcher(request):
 
     else:
         return JsonResponse({'ret': 1, 'msg': 'No class type HTTP request'})
+
+print("over!")
